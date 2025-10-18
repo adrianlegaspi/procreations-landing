@@ -47,7 +47,7 @@ export default function EulaPage() {
         <section>
           <h2 className="text-lg font-medium">Warranty Disclaimer</h2>
           <p className="mt-2 text-zinc-300">
-            Software provided "as is" without warranties. We disclaim all implied warranties.
+            Software provided &quot;as is&quot; without warranties. We disclaim all implied warranties.
           </p>
         </section>
         <section>

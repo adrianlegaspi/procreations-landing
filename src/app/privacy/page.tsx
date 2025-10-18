@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           </p>
         </section>
         <section>
-          <h2 className="text-lg font-medium">Children's Privacy</h2>
+          <h2 className="text-lg font-medium">Children&apos;s Privacy</h2>
           <p className="mt-2 text-zinc-300">
             Our services are not intended for children under 13 (COPPA). We do not knowingly collect data from minors.
           </p>

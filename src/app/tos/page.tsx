@@ -60,7 +60,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-lg font-medium">Disclaimers</h2>
           <p className="mt-2 text-zinc-300">
-            Services provided "as is" without warranties. We do not guarantee uptime or error-free operation.
+            Services provided &quot;as is&quot; without warranties. We do not guarantee uptime or error-free operation.
           </p>
         </section>
         <p className="text-zinc-400 text-sm">
