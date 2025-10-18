@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import CustomCursor from "@/components/CustomCursor";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -40,6 +41,17 @@ export default function Home() {
           <div className="rounded-xl border border-white/10 bg-white/5 p-5 animate-[fadeIn_0.6s_ease-out_0.4s]">
             <h3 className="font-medium">Consulting</h3>
             <p className="mt-2 text-sm text-zinc-300">Architecture, performance, and product guidance.</p>
+          </div>
+        </section>
+        <section id="contact" className="mx-auto mt-16 max-w-6xl grid gap-10 lg:grid-cols-[1.1fr_1fr]">
+          <div>
+            <h2 className="text-3xl font-semibold tracking-tight">Let&apos;s build your next idea</h2>
+            <p className="mt-4 text-zinc-300 text-base sm:text-lg max-w-xl">
+              Share a few details about the product, platform, or AI experience you want to ship. We&apos;ll reach out within one business day.
+            </p>
+          </div>
+          <div className="flex justify-end">
+            <ContactForm />
           </div>
         </section>
       </main>
