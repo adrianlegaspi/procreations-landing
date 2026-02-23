@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import CustomCursor from "@/components/CustomCursor";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <CustomCursor />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.15),_transparent_60%)]" />
       <header className="px-6 sm:px-10 py-6">
         <div className="mx-auto max-w-6xl flex items-center gap-3">
@@ -41,6 +39,32 @@ export default function Home() {
           <div className="rounded-xl border border-white/10 bg-white/5 p-5 animate-[fadeIn_0.6s_ease-out_0.4s]">
             <h3 className="font-medium">Consulting</h3>
             <p className="mt-2 text-sm text-zinc-300">Architecture, performance, and product guidance.</p>
+          </div>
+        </section>
+        <section id="portfolio" className="mx-auto mt-16 max-w-6xl">
+          <h2 className="text-3xl font-semibold tracking-tight">Portfolio</h2>
+          <p className="mt-4 text-zinc-300 text-base sm:text-lg max-w-2xl">
+            A selection of projects we&apos;ve shipped.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="https://cardom.procreations.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
+            >
+              <Image
+                src="/assets/cardom/logo.png"
+                alt="Cardom"
+                width={64}
+                height={64}
+                className="rounded-lg"
+              />
+              <h3 className="mt-4 font-medium group-hover:text-blue-400 transition-colors">Cardom</h3>
+              <p className="mt-2 text-sm text-zinc-300">
+                A roguelike videogame with turn-based card combat.
+              </p>
+            </Link>
           </div>
         </section>
         <section id="contact" className="mx-auto mt-16 max-w-6xl grid gap-10 lg:grid-cols-[1.1fr_1fr]">
