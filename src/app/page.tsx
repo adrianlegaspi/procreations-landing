@@ -9,7 +9,7 @@ export default function Home() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.15),_transparent_60%)]" />
       <header className="px-6 sm:px-10 py-6">
         <div className="mx-auto max-w-6xl flex items-center gap-3">
-          <Image src="/assets/logo-transparent.png" alt="Pro Creations" width={120} height={120} className="rounded-sm border-none shadow-none" />
+          <Image src="/assets/logo-transparent.png" alt="Pro Creations" width={160} height={160} className="rounded-sm border-none shadow-none" />
           <h1 className="text-lg font-semibold tracking-tight absolute -left-[9999px]">Pro Creations</h1>
         </div>
       </header>
@@ -22,8 +22,8 @@ export default function Home() {
             A focused developer studio delivering fast, reliable, and beautiful digital products.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Link href="/tos" className="px-5 py-2.5 rounded-full border border-white/15 hover:bg-white/5 text-sm font-medium transition">
-              Terms
+            <Link href="#contact" className="px-5 py-2.5 rounded-full border border-white/15 hover:bg-white/5 text-sm font-medium transition">
+              Contact
             </Link>
           </div>
         </section>
@@ -86,6 +86,7 @@ export default function Home() {
             <Link href="/privacy" className="hover:text-white">Privacy</Link>
             <Link href="/tos" className="hover:text-white">Terms</Link>
             <Link href="/eula" className="hover:text-white">EULA</Link>
+            <Link href="/copyright" className="hover:text-white">Copyright</Link>
           </nav>
         </div>
       </footer>
